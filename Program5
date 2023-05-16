@@ -1,0 +1,18 @@
+//Fibonnaci Series
+import java.util.Scanner;
+//import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();sc.nextLine();
+		int f = 0;
+		int fb;
+		System.out.print(f);
+		for(int s=1; s<n;s=fb){
+		    fb = f+s;
+		    f = s;
+		    System.out.print(" "+s);
+		}
+	}
+}
