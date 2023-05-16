@@ -1,0 +1,24 @@
+//Count vowels, consonants, and digits in the string
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		String s = str.toLowerCase();
+		int cv = 0; int cc = 0;int cd = 0;
+		for(int i=0; i<s.length(); i++){
+		    char c = s.charAt(i);
+		    if(c>='a' && c<='z')
+		        if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
+		            cv++;
+		        else
+		            cc++;
+		    else if(c>='0'&&c<='9')
+		        cd++;
+		    else 
+		        continue;
+		}
+		System.out.println("v: "+cv+", c: "+cc+", d: "+cd);
+	}
+}
